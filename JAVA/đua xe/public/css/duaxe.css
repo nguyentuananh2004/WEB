@@ -1,0 +1,127 @@
+/* public/css/xe.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.race-track {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    bottom:10%;
+}
+
+.car {
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    background-size: cover;
+    bottom: 50px;
+}
+
+#car1 {
+    left: 20%;
+    background-image: url('../img/car_1.png');
+    z-index: 1;
+    bottom: 250px;
+    left:0px;
+    
+}
+
+#car2 {
+    background-image: url('../img/car_2.png');
+    left:0px;
+}
+.xang1{
+    width:100px;
+    height:10px;
+    background-color: aquamarine;
+    list-style-type: none;
+}
+.xang2{
+    width:100px;
+    height:10px;
+    background-color: aquamarine;
+    list-style-type: none;
+}
+.den1{
+    width:50px;
+    height:50px;
+    border-style: solid;
+    list-style-type: none;
+    border-radius:100px;
+    margin-right: 10px;
+
+}
+.den2{
+    width:50px;
+    height:50px;
+    border-style: solid;
+    list-style-type: none;
+    border-radius:100px;
+    color:black;
+    margin-right: 10px; 
+
+}
+.den3{
+    width:50px;
+    height:50px;
+    border-style: solid;
+    list-style-type: none;
+    border-radius:100px;
+   
+
+}
+.den{
+   display:flex
+   
+}
+.car{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(0,-1px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0, -1px,0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
+
+
+/* Các styles khác ở đây */
+
+.den1.light1 {
+    background-color: red;
+}
+
+.den2.light2 {
+    background-color: yellow;
+}
+
+.den3.light3 {
+    background-color: green;
+}
+

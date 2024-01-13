@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Racing Game</title>
+    <link rel="stylesheet" href="./public/css/duaxe.css">
+</head>
+<body>
+    <ul class="den">
+        <li class="den1"></li>
+        <li class="den2"></li>
+        <li class="den3"></li>
+    </ul>
+    <ul>
+        <li> xăng xe 1</li>
+        <li class="xang1"></li>
+        <li> xăng xe 2</li>
+        <li class="xang2"></li>
+    </ul>
+
+    <div class="race-track" style="background-image: url('./public/img/street.jpg');">
+        <div id="car1" class="car" style="background-image: url('./public/img/car_1.png');"></div>
+        <div id="car2" class="car" style="background-image: url('./public/img/car_2.png');"></div>
+    </div>
+
+    <!-- Thêm nút bắt đầu -->
+    <button id="startButton" onclick="startRace()">Bắt đầu</button>
+
+    <script src="./public/js/duaxe.js"></script>
+</body>
+</html>
